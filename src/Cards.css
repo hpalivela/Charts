@@ -1,0 +1,11 @@
+.card-container{
+    background-color: aliceblue;
+    width:20%;
+    padding:10px;
+    margin:5px;
+}
+@media (max-width: 768px) {
+    .card-container {
+        width: 40%;
+    }
+}

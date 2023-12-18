@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import BarCharts from './BarCharts'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SpringTable from './SpringTable'
+import StreamedChart from './StreamedChart'
+import CardData from './CardData';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <StreamedChart/>
+     <BarCharts/>
+      <SpringTable/>
+      <CardData/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
